@@ -1,4 +1,4 @@
-var builder = require('botbuilder');
+ï»¿var builder = require('botbuilder');
 var prizeWinnersService = require('../../services/prizeWinnersService');
 var lib = new builder.Library('peacePrizeWinnersDialog');
 
@@ -28,7 +28,7 @@ lib.dialog('/',
             prizeWinnersService.getPrizeWinnerByYear(session.dialogData.userInfo.birthYear).then(function (prizeWinner) {
                 var message = "Visste du at " +
                     prizeWinner.laureates[0].surname +
-                    " vant nobels fredspris det året du ble født?";
+                    " vant nobels fredspris det Ã¥ret du ble fÃ¸dt?";
                 session.send(message);
                 return session.endDialogWithResult({});
             });

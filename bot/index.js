@@ -8,6 +8,7 @@ var connector = new builder.ChatConnector({
 
 var AlfredNobelOption = 'welcome_question_option1';
 var PeacePrizeWinnersOption = 'welcome_question_option2';
+var WelcomeTitle = 'welcome_title';
 var WelcomeQuestionTitle = 'welcome_question_title';
 var WelcomeQuestionText = 'welcome_question_text';
 
@@ -19,7 +20,9 @@ var bot = new builder.UniversalBot(connector, function (session) {
     if (session.message.text === session.gettext(PeacePrizeWinnersOption)) {
         return session.beginDialog('peacePrizeWinnersDialog:/');
     }
-
+	
+	session.send(session.gettext(WelcomeTitle));
+	
     var welcomeCard = new builder.HeroCard(session)
         .title(WelcomeQuestionTitle)
         .subtitle(WelcomeQuestionText)
