@@ -1,0 +1,15 @@
+{
+  "name": "alfred",
+  "version": "1.0.0",
+  "description": "chatbot-example-nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "me",
+  "license": "ISC",
+  "dependencies": {
+    "botbuilder": "^3.9.0",
+    "restify": "^5.1.0"
+  }
+}
