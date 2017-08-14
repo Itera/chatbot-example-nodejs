@@ -1,0 +1,6 @@
+{
+  "name_question": "Hva heter du?",
+  "birth_year_question": "Hvilket år ble du født?",
+  "country_question": "Hvilket land kommer du fra?",
+  "invalid_birth_year": "Året du oppga var ikke gyldig, prøv igjen!"
+}

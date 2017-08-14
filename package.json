@@ -8,8 +8,13 @@
   },
   "author": "me",
   "license": "ISC",
+ 
   "dependencies": {
-    "botbuilder": "^3.9.0",
-    "restify": "^5.1.0"
+    "bluebird": "^3.4.7",
+    "lodash": "^4.17.4",
+	"botbuilder": "^3.9.0",
+    "express": "^4.14.0",
+    "lodash": "^4.17.4"
+
   }
 }
